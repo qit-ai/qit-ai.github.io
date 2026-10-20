@@ -583,3 +583,11 @@ a.btn-secondary:hover { background: var(--ink); color: var(--paper); border-colo
   * { transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Contact by email */
+.email-big{display:inline-block;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.15;color:var(--accent,#002FA7);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:.1em;word-break:break-all;}
+.email-big:hover{color:#0a0a0a;}
+.contact-email .muted{margin-top:.5rem;}
+.email-checklist{list-style:none;padding:0;margin:1.2rem 0 2rem;border-top:1px solid #d4d4d2;}
+.email-checklist li{padding:.75rem 0 .75rem 1.6rem;border-bottom:1px solid #d4d4d2;position:relative;}
+.email-checklist li::before{content:"";position:absolute;left:0;top:1.25em;width:.55rem;height:.55rem;background:#002FA7;}
