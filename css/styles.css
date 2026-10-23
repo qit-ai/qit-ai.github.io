@@ -1106,3 +1106,17 @@ footer a:hover {
     font-size: 13px;
   }
 }
+
+/* Edition label on the homepage. */
+.hero-home .session-label {
+  color: #c6bfff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2.8px;
+}
+@media (max-width: 560px) {
+  .hero-home .session-label {
+    font-size: 18px;
+    letter-spacing: 2.2px;
+  }
+}
