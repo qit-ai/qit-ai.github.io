@@ -155,7 +155,8 @@ nav a:hover {
   border-bottom: 1px solid var(--line);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 0 45px;
   font-size: 11px;
   letter-spacing: 0.2px;
@@ -938,7 +939,8 @@ footer a:hover {
   min-height: 410px;
   padding: 38px 40px;
 }
-.hero-home h1 {
+.hero-home h1,
+.hero-home .session-label {
   font-size: clamp(36px, 3.3vw, 50px);
 }
 .hero-home .hero-meta {
@@ -1022,7 +1024,8 @@ footer a:hover {
     min-height: 370px;
     padding: 27px 22px;
   }
-  .hero-home h1 {
+  .hero-home h1,
+  .hero-home .session-label {
     font-size: clamp(27px, 7.4vw, 36px);
   }
   .hero-home .hero-meta {
@@ -1060,11 +1063,9 @@ footer a:hover {
   min-height: 480px;
   padding: 44px;
 }
-.hero-home h1 {
+.hero-home h1,
+.hero-home .session-label {
   font-size: clamp(42px, 3.9vw, 60px);
-}
-.hero-home .eyebrow {
-  font-size: 11px;
 }
 .hero-home .date-badge strong {
   font-size: 20px;
@@ -1081,7 +1082,8 @@ footer a:hover {
     padding: 36px;
     min-height: 430px;
   }
-  .hero-home h1 {
+  .hero-home h1,
+  .hero-home .session-label {
     font-size: clamp(38px, 5.8vw, 48px);
   }
 }
@@ -1090,11 +1092,9 @@ footer a:hover {
     padding: 30px 22px;
     min-height: 400px;
   }
-  .hero-home h1 {
+  .hero-home h1,
+  .hero-home .session-label {
     font-size: clamp(29px, 8vw, 40px);
-  }
-  .hero-home .eyebrow {
-    font-size: 9px;
   }
   .hero-home .date-badge strong {
     font-size: 18px;
@@ -1107,16 +1107,84 @@ footer a:hover {
   }
 }
 
-/* Edition label on the homepage. */
-.hero-home .session-label {
+/* Session identity is shared across the three main pages. */
+.session-label {
   color: #c6bfff;
-  font-size: 20px;
+  font-family: var(--sans);
   font-weight: 500;
-  letter-spacing: 2.8px;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+.hero-home .session-label {
+  font-size: clamp(33.6px, 3.12vw, 48px);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+.subhero .session-label {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 800px) {
+  .hero-home .session-label {
+    font-size: clamp(30.4px, 4.64vw, 38.4px);
+  }
 }
 @media (max-width: 560px) {
   .hero-home .session-label {
-    font-size: 18px;
-    letter-spacing: 2.2px;
+    font-size: clamp(23.2px, 6.4vw, 32px);
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  .subhero .session-label {
+    font-size: 16px;
+  }
+}
+
+/* Persistent edition tag in the top bar. */
+.session-badge {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border: 1px solid #ded8ef;
+  border-radius: 5px;
+  background: #efebf8;
+  color: #7561aa;
+  font: 500 11px/1.4 var(--sans);
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+@media (max-width: 560px) {
+  .topbar {
+    height: auto;
+    min-height: 50px;
+    padding-block: 9px;
+    gap: 12px;
+  }
+  .topbar > span:first-child {
+    min-width: 0;
+  }
+  .session-badge {
+    padding: 6px 8px;
+    font-size: 9px;
+  }
+}
+
+/* Keep the edition tag alongside the workshop name. */
+.topbar {
+  height: auto;
+  min-height: 68px;
+  padding-block: 12px;
+  gap: 8px 14px;
+}
+@media (max-width: 800px) {
+  .topbar {
+    min-height: 42px;
+    padding-block: 8px;
+  }
+}
+@media (max-width: 560px) {
+  .topbar {
+    min-height: 50px;
   }
 }
