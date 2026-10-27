@@ -1188,3 +1188,36 @@ footer a:hover {
     min-height: 50px;
   }
 }
+
+/* Winter edition details. */
+.date-time {
+  display: block;
+  margin-top: 5px;
+  font: 500 14px/1.5 var(--sans);
+  color: #d9e2fa;
+}
+.organizer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.organizer-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.organizer-list li:last-child { border-bottom: 0; }
+.organizer-list li span:last-child { color: var(--muted); font-size: 12px; }
+@media (max-width: 560px) {
+  .date-time { font-size: 12px; }
+  .detail-list > div { flex-wrap: wrap; gap: 6px 18px; }
+}
+
+.registration-form-link { color: var(--purple); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.contact-emails { margin-top: 16px; padding-left: 20px; }
+.contact-emails li { margin: 8px 0; }
+.contact-emails a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
