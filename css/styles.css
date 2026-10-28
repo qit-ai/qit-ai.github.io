@@ -1221,3 +1221,52 @@ footer a:hover {
 .contact-emails { margin-top: 16px; padding-left: 20px; }
 .contact-emails li { margin: 8px 0; }
 .contact-emails a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Connect the edition to its series and strengthen navigation. */
+.series-name {
+  max-width: 560px;
+  margin-bottom: 22px;
+  color: #e0e6f5;
+  font: 500 18px/1.5 var(--sans);
+}
+.series-name > span {
+  display: block;
+  margin-top: 3px;
+  color: #b9c5e0;
+  font: 11px/1.5 var(--mono);
+  letter-spacing: 1.2px;
+}
+.sidebar nav a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #303a54;
+  padding: 14px 10px;
+  gap: 9px;
+}
+.sidebar .nav-index { font-size: 11px; color: #606b83; }
+.sidebar nav a[aria-current] {
+  color: #44368d;
+  background: #dedaf2;
+  box-shadow: inset 3px 0 #6259bd;
+}
+.sidebar nav a:hover { background: #e3e1f2; color: #44368d; }
+.brand-caption { color: #58647c; }
+@media (max-width: 800px) {
+  .sidebar nav a { font-size: 14px; padding: 10px; gap: 0; }
+  .series-name { font-size: 16px; }
+}
+@media (max-width: 560px) {
+  .sidebar nav a { font-size: 13px; padding: 10px 5px; }
+  .series-name { font-size: 15px; margin-bottom: 18px; }
+  .series-name > span { font-size: 10px; }
+}
+
+/* Keep the edition topic on one line at every screen width. */
+.hero-home { container-type: inline-size; }
+.hero-home h1 { font-size: clamp(18px, 6.4cqi, 60px); }
+.hero-home h1 > .title-subject {
+  white-space: nowrap;
+  color: #fff;
+  background: none;
+}
