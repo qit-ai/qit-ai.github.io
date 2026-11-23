@@ -1301,3 +1301,18 @@ footer a:hover {
 .team-list .organizer-info { display: flex; flex-direction: column; gap: 3px; }
 .team-list .organizer-info .speaker-name { font-size: 14px; color: var(--ink); }
 .team-list .organizer-affiliation { font-size: 12px; color: var(--muted); }
+
+/* Three-day program with continuous roundtable sessions. */
+.schedule-timezone { color: var(--muted); font-size: 14px; }
+.schedule-scroll { overflow-x: auto; margin-top: 24px; }
+.schedule-table { width: 100%; min-width: 730px; border-collapse: collapse; font-size: 14px; text-align: left; }
+.schedule-table caption { text-align: left; font-weight: 600; padding-bottom: 14px; }
+.schedule-table th, .schedule-table td { padding: 17px 16px; border-bottom: 1px solid var(--line); }
+.schedule-table thead th { background: var(--ink); color: white; font-weight: 600; }
+.schedule-table tbody th { white-space: nowrap; font-size: 12px; font-weight: 500; color: var(--muted); }
+.schedule-table td { border-left: 1px solid var(--line); }
+.schedule-break { background: #f5f6fa; color: var(--muted); }
+.schedule-roundtable { background: #efedf9; color: var(--purple); vertical-align: middle; font-weight: 500; }
+.schedule-roundtable span { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 400; }
+.schedule-ended { color: var(--muted); }
+.schedule-scroll:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
