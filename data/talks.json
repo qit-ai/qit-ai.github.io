@@ -1,0 +1,70 @@
+{
+  "Marco Tomamichel": {
+    "title": "Two Proofs, One Theorem: The strong converse for quantum capacity",
+    "abstract": null,
+    "references": [],
+    "note": null
+  },
+  "Maksim Shirokov": {
+    "title": "Coincidence of discrete and continuous definitions of EoF and its corollaries",
+    "abstract": null,
+    "references": [],
+    "note": "Joint work with Haobo Ma and Wenlin Zhang."
+  },
+  "Christoph Hirche": {
+    "title": "On the private capacity of quantum channels",
+    "abstract": null,
+    "references": [],
+    "note": null
+  },
+  "Salman Beigi": {
+    "title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems",
+    "abstract": null,
+    "references": [
+      "https://arxiv.org/pdf/2610.28902"
+    ],
+    "note": null
+  },
+  "Kun Fang": {
+    "title": "Approximate majorization and high-order capacity of quantum depolarizing channels",
+    "abstract": "A central challenge in quantum information theory is to determine whether entanglement provides an advantage for information processing when coherent operations across multiple channel uses are allowed. For depolarizing channels, King's proof of the additivity of the minimum output entropy rules out such an advantage for classical communication at leading asymptotic order, while leaving open the possibility of an advantage for higher orders. In this work, we conjecture a majorization relation for the outputs of depolarizing channels and prove an approximate version of this conjecture. Our proof combines an exact ordering of shifted log-determinants with an anti-concentration bound for the spectrum of the product-state output, refining King's analysis based on Schatten norms. An additional logarithmic second-moment estimate controls arbitrary channel outputs. As a direct application, we obtain a tight third-order expansion for the classical capacity of quantum depolarizing channels. Consequently, entangled codewords and collective decoding can improve the logarithm of the message size over the product-coding strategy by at most O(1) bits, sharpening our understanding of the role of entanglement in the finite-blocklength regime.",
+    "references": [],
+    "note": null
+  },
+  "Gerardo Adesso": {
+    "title": "Optimality of Gaussian entanglement of formation and other stories.",
+    "abstract": "I will talk about how AI models are helping me resolve instances of what Holevo likes to call the Gaussian optimizers conjecture. In particular I will show that entanglement of formation, Gaussian entanglement of formation, and entanglement cost coincide for every finite-energy bipartite Gaussian state of an arbitrary finite number of modes. Their common value is strongly superadditive and lower-bounds entanglement of formation and entanglement cost for arbitrary non-Gaussian states with the same covariance matrix. This also allows us to determine the entanglement cost of every multimode Gaussian channel as well as its classical capacity under a mean energy constraint. I would like to illustrate the underlying geometry of these problems, and reflect on my own journey with AI-assisted discovery in recent years.",
+    "references": [
+      "https://doi.org/10.48550/arXiv.2611.22915",
+      "https://doi.org/10.1103/5jfn-ms77",
+      "https://doi.org/10.1002/aaai.12113"
+    ],
+    "note": null
+  },
+  "Peixue Wu": {
+    "title": "Classical communication over quantum channels: does entanglement help?",
+    "abstract": "A fundamental question in quantum information theory is whether entangling the inputs across multiple uses of a quantum channel can increase the rate at which it transmits classical information. An old conjecture dating back nearly three decades ago asserted that it cannot. In 2009, Hastings disproved this conjecture by showing that there exist channels for which entangled inputs strictly increase the communication rate. His argument, however, is probabilistic: it shows that suitably chosen random channels exhibit this effect, but it does not identify any specific one. In this talk, I will discuss how to construct an explicit construction of a channel with such an entanglement advantage. On the other hand, we show that for phase-covariant and all qubit-to-qubit channels, there is no entanglement advantage.",
+    "references": [],
+    "note": null
+  },
+  "David Sutter": {
+    "title": "The regularized channel Rényi divergence is continuous",
+    "abstract": "For a long time it was unclear if the regularized channel Rényi divergence is continuous at alpha=1. With the help of GPT Astra we could recently show that this is indeed the case. I will explain the proof, which contains interesting ingredients such as a novel variational formula for the regularized channel divergence, and then comment of a few applications.",
+    "references": [
+      "https://arxiv.org/abs/2609.29885"
+    ],
+    "note": "Joint work with Lukas Schmitt."
+  },
+  "Hao-Chung Cheng": {
+    "title": "Sharp Continuity of Petz and Sandwiched Rényi Conditional Entropies",
+    "abstract": "We determine the sharp modulus of continuity, in trace distance, of the optimized Petz and sandwiched Rényi conditional entropies for every order α ∈ [1/2,1). If two bipartite states are within trace distance δ, then both conditional entropies differ by at most 1/(1−α) log[(1−ε)^α+(D−1)^(1−α) ε^α], where ε := min{δ,1−1/D} and D is the effective dimension, given by the dimension of the first subsystem times the largest possible Schmidt rank. For every distance constraint δ ∈ [0,1], the bound is attained by an isotropic pair with a maximally entangled anchor. Taking α ↑ 1 recovers the recent sharp continuity bound of quantum conditional entropy by Berta et al. [arXiv:2607.24687].\n\nThe proof linearizes the relevant concave Rényi functional at a comparison point dictated by the isotropic equality family. Schmidt-rank domination extends the equality geometry to an arbitrary anchor state, after which trace-distance duality and a noncommutative calibration estimate control the perturbation and anchor term without weakening the sharp constant.",
+    "references": [],
+    "note": null
+  },
+  "Tulja Varun Kondra": {
+    "title": "Sharp Quantum Capacity Thresholds: Exponential Strong Converses for Degradable and Antidegradable Channels.",
+    "abstract": "The quantum capacity of a noisy channel quantifies the maximum rate at which quantum information can be transmitted reliably. For general channels, its evaluation requires an optimization over arbitrarily many channel uses. Degradable channels form a central exception: their capacity is given by the single-letter coherent information, while antidegradable channels have zero capacity. Nevertheless, even for these fundamental classes, it has remained open whether communication above capacity becomes possible when a fixed non-maximal error is tolerated. Here we resolve this problem by proving an exponential strong converse for every finite-dimensional degradable and antidegradable channel: at any rate above capacity, the fidelity of every coding scheme decays exponentially with the number of channel uses. As an immediate consequence, we establish the first all-code exponential strong converse for the quantum erasure channel throughout its full parameter range, strengthening previous results that applied only to almost all codes. We also show that exponential strong-converse bounds are preserved under receiver post-processing. This yields efficiently computable semidefinite-programming bounds for arbitrary finite-dimensional channels, improved bounds for Pauli channels, and an exact exponential strong converse for a nondegradable multilevel amplitude-damping family.",
+    "references": [],
+    "note": null
+  }
+}

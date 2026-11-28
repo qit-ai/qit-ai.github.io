@@ -1316,3 +1316,21 @@ footer a:hover {
 .schedule-roundtable span { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 400; }
 .schedule-ended { color: var(--muted); }
 .schedule-scroll:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
+
+/* Talk titles and abstracts */
+.talks-overview { padding-bottom: 0; }
+.talk-day-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.talk-day-nav a { padding: 10px 20px; border: 1px solid var(--line); border-radius: 6px; font-size: 16px; font-weight: 600; color: var(--purple); }
+.talk-day-nav a:hover { background: #efedf9; }
+.talk-day, .talk-entry { scroll-margin-top: 30px; }
+.talk-entry { padding: 30px 0; border-bottom: 1px solid var(--line); }
+.talk-entry:target { background: #f8f7fc; box-shadow: -16px 0 #f8f7fc, 16px 0 #f8f7fc; }
+.talk-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 16px; color: var(--purple); font-weight: 600; }
+.talk-meta time { color: var(--muted); font-size: 14px; font-weight: 400; }
+.talk-entry h3 { font-size: clamp(20px, 2.3vw, 26px); line-height: 1.35; margin: 14px 0 18px; }
+.talk-abstract { max-width: 80ch; font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
+.talk-abstract p { margin: 0 0 16px; }
+.talk-pending, .talk-note { color: var(--muted); font-size: 14px; }
+.talk-references { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; }
+.talk-references a, .schedule-talk-link { text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #c9c0e2; }
+.schedule-talk-link:hover { color: var(--purple); }
