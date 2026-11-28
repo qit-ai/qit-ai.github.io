@@ -1334,3 +1334,8 @@ footer a:hover {
 .talk-references { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; }
 .talk-references a, .schedule-talk-link { text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #c9c0e2; }
 .schedule-talk-link:hover { color: var(--purple); }
+
+.hero-actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; margin-top: 30px; }
+.hero-home .hero-actions .hero-link { margin-top: 0; justify-content: center; }
+.hero-home .hero-zoom { background: #b8edf0; border-color: #b8edf0; color: #163d46; }
+.hero-home .hero-zoom:hover { background: #d5f8fa; border-color: #d5f8fa; }
